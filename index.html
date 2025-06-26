@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>M&L</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <script src="js/main.js" defer></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+      <script src="https://kit.fontawesome.com/d1be9b5cb8.js" crossorigin="anonymous"></script>
+      <link rel="icon" type="image/x-icon" href="img/Corner.webp">
+   </head>
+   <body>
+      <header id="top__bar" class="top">
+         <div class="top__branding">
+            <a href="/"><img src="img/Logo.webp" class="top--img" alt="Logo" /></a>
+            <span class="top--text">MEET EN LOUNGE</span>
+         </div>
+         <div class="top--buttons">
+            <button id="productButton" class="top--button">PRODUCTEN</button>
+            <button id="themeToggleBtn" class="top--button">DARK</button>
+            <button id="shoppingCartButton" class="top--button">
+            <i class="fas fa-shopping-cart"></i> WINKELWAGEN
+            </button>
+         </div>
+      </header>
+      <main>
+         <section class="static--image-container">
+            <img src="img/test-img.png" class="static--image" alt="Hero Image" />
+         </section>
+         <section id="firstBorder" class="web--border">
+            <span id="firstBorder__text" class="border--text">PREMIUM WATERPIJP VAN DE WEEK</span>
+         </section>
+         <section class="web--background">
+            <article id="web--weekly_sale">
+               <div id="web--weekly_sale--content">
+                  <img src="img/smoke.png" id="web--weekly_sale-image" class="weekly--sale--image" alt="Smoke" />
+                  <img src="img/test-img2.png" id="web--weekly_sale-hookah-image" class="weekly--sale--hookah" alt="Hookah of the week" />
+               </div>
+               <div id="web--weekly_sale--description">
+                  <h2 id="web--weekly_sale--description_title" class="sale--title">
+                     Frosted Elegance Hookah <span class="sale--price">Є79.99</span>
+                  </h2>
+                  <p id="web--weekly_sale--description_text" class="sale--description">
+                     Deze waterpijp combineert een strak, modern design met
+                     <strong class="bold--text"> hoogwaardige materialen</strong>. De
+                     <strong class="bold--text">matglazen vaas en roestvrijstalen afwerking</strong>
+                     zorgen voor een luxe uitstraling én duurzaamheid. Met een soepele trek, stille rookontwikkeling en eenvoudig onderhoud is dit de perfecte keuze voor wie kwaliteit én looks belangrijk vindt.
+                  </p>
+               </div>
+            </article>
+            <section class="web--catalog">
+               <h2 id="web--catalog__title" class="catalog--title">ONZE PRODUCTEN</h2>
+               <div class="catalog--top">
+                  <aside class="sidebar">
+                     <nav class="sidebar--nav">
+                        <h3 class="sidebar--title">
+                           PRODUCTEN <button class="sidebar--title--button"><i class="fa-solid fa-plus"></i></button>
+                        </h3>
+                        <ul class="sidebar--list">
+                           <li><button class="sidebar--button active">Alle</button></li>
+                           <li><button class="sidebar--button">Waterpijpen</button></li>
+                           <li><button class="sidebar--button">Slangen</button></li>
+                           <li><button class="sidebar--button">Kolen</button></li>
+                        </ul>
+                     </nav>
+                  </aside>
+                  <div class="catalog--search">
+                     <i class="catalog--search__icon fa-solid fa-magnifying-glass"></i>
+                     <input class="catalog--search__input" type="text" placeholder="Zoek een product..." />
+                  </div>
+                  <nav class="catalog--slider">
+                     <label for="priceSlider" class="slider--label">PRIJS</label>
+                     <input type="range" id="priceSlider" class="slider--input" min="0" max="200" value="100" />
+                     <input type="number" id="priceValue" class="slider--value" min="0" max="200" value="100" step="1" />
+                  </nav>
+                  <button id="sortToggle" class="catalog--button">
+                  <i class="fa-solid fa-arrow-down"></i>
+                  </button>
+               </div>
+               <section class="product--container"></section>
+            </section>
+         </section>
+      </main>
+      <footer class="web--footer">
+         <div class="footer--content">
+            <div class="footer--branding">
+               <img src="img/Logo.webp" class="footer--logo" alt="Logo" />
+               <p class="footer--tagline">Premium Hookah Products</p>
+            </div>
+            <div class="footer--links">
+               <button id="footerHomeButton" class="footer--link">Home</button>
+               <button id="footerProductButton" class="footer--link">Producten</button>
+               <button id="footerShoppingcartButton" class="footer--link">Winkelwagen</button>
+            </div>
+            <p class="footer--copyright">© 2025 M&L. Alle rechten voorbehouden.</p>
+         </div>
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Winkelwagen</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <script src="js/cart.js" defer></script>
+      <script src="js/main.js" defer></script>
+      <script src="https://kit.fontawesome.com/d1be9b5cb8.js" crossorigin="anonymous"></script>
+      <link rel="icon" type="image/x-icon" href="img/Corner.webp">
+   </head>
+   <body>
+      <header id="top__bar" class="top">
+         <div class="top__branding">
+            <a href="/"><img src="img/Logo.webp" class="top--img" alt="Logo" /></a>
+            <span class="top--text">MEET EN LOUNGE</span>
+         </div>
+         <div class="top--buttons">
+            <button id="productButton" class="top--button">PRODUCTEN</button>
+            <button id="themeToggleBtn" class="top--button">DARK</button>
+            <button id="shoppingCartButton" class="top--button">
+            <i class="fas fa-shopping-cart"></i> WINKELWAGEN
+            </button>
+         </div>
+      </header>
+      <main>
+         <h1 class="cart--title">Jouw Winkelwagen</h1>
+         <section class="cart--container"></section>
+         <section class="cart--summary">
+            <p class="cart--total">Totaal: €<span id="cartTotal">0.00</span></p>
+            <div class="cart--buttons">
+               <button class="cart--button" id="checkoutBtn">Afrekenen</button>
+               <button class="cart--button" id="clearCartBtn">Leeg Winkelwagen</button>
+            </div>
+         </section>
+      </main>
+      <footer class="web--footer">
+         <div class="footer--content">
+            <div class="footer--branding">
+               <img src="img/Logo.webp" class="footer--logo" alt="Logo" />
+               <p class="footer--tagline">Premium Hookah Products</p>
+            </div>
+            <nav class="footer--links">
+               <button id="footerHomeButton" class="footer--link">Home</button>
+               <button id="footerProductButton" class="footer--link">Producten</button>
+               <button id="footerShoppingcartButton" class="footer--link">Winkelwagen</button>
+            </nav>
+            <p class="footer--copyright">© 2025 M&L. Alle rechten voorbehouden.</p>
+         </div>
+      </footer>
+   </body>
+</html>

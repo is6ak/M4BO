@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "type": "Waterpijpen",
+    "title": "Frosted Elegance",
+    "description": "Deze waterpijp combineert een strak, modern design met hoogwaardige materialen. De matglazen vaas en roestvrijstalen afwerking zorgen voor een luxe uitstraling én duurzaamheid. Met een soepele trek, stille rookontwikkeling en eenvoudig onderhoud is dit de perfecte keuze voor wie kwaliteit én looks belangrijk vindt.",
+    "price": 79.99,
+    "stock": 7,
+    "image": "shisha1.png"
+  },
+  {
+    "id": 2,
+    "type": "Waterpijpen",
+    "title": "Black Classic",
+    "description": "Een tijdloze zwarte hookah met duurzame metalen onderdelen en soepel rookgedrag.",
+    "price": 59.99,
+    "stock": 23,
+    "image": "shisha2.png"
+  },
+  {
+    "id": 3,
+    "type": "Waterpijpen",
+    "title": "Blue Crystal",
+    "description": "Witte waterpijp met blauwe details, perfect voor een stijlvolle rookervaring.",
+    "price": 84.99,
+    "stock": 12,
+    "image": "shisha3.png"
+  },
+  {
+    "id": 4,
+    "type": "Waterpijpen",
+    "title": "Cherry Red",
+    "description": "Deze stijlvolle waterpijp combineert een robuuste, matte grijze basis met opvallende rode details voor een krachtige en moderne uitstraling. De glazen vaas is voorzien van een subtiel bladmotief dat elegantie toevoegt aan het stoere design. Met een stevige metalen steel en een soepele siliconen slang biedt de Rogue Ember Hookah niet alleen een visueel statement, maar ook een uitstekende rookervaring. Ideaal voor wie houdt van verfijnd design met een vleugje vuur.",
+    "price": 89.99,
+    "stock": 10,
+    "image": "shisha4.png"
+  },
+  {
+    "id": 5,
+    "type": "Slangen",
+    "title": "Witte slang",
+    "description": "Siliconen shisha slang (wit) 150 cm lang, flexibel, geur- en smaakvrij, universele aansluiting, lichtgewicht, duurzaam en eenvoudig schoon te maken.",
+    "price": 19.99,
+    "stock": 10,
+    "image": "slang1.png"
+  },
+  {
+    "id": 6,
+    "type": "Slangen",
+    "title": "Zwarte slang",
+    "description": "Siliconen shisha slang (zwart) 150 cm lang, flexibel, geur- en smaakvrij, universele aansluiting, lichtgewicht, duurzaam en eenvoudig schoon te maken.",
+    "price": 19.99,
+    "stock": 10,
+    "image": "slang2.png"
+  },
+  {
+    "id": 7,
+    "type": "Slangen",
+    "title": "Rode slang",
+    "description": "Siliconen shisha slang (rood) 150 cm lang, flexibel, geur- en smaakvrij, universele aansluiting, lichtgewicht, duurzaam en eenvoudig schoon te maken.",
+    "price": 24.99,
+    "stock": 10,
+    "image": "slang3.png"
+  },
+  {
+    "id": 8,
+    "type": "Slangen",
+    "title": "Blauwe slang",
+    "description": "Siliconen shisha slang (blauw) 150 cm lang, flexibel, geur- en smaakvrij, universele aansluiting, lichtgewicht, duurzaam en eenvoudig schoon te maken.",
+    "price": 24.99,
+    "stock": 10,
+    "image": "slang4.png"
+  },
+  {
+    "id": 9,
+    "type": "Kolen",
+    "title": "Kolen (x10)",
+    "description": "  0,2 KG. Onze quick-light waterpijp kolen zijn ideaal voor wie gemak en kwaliteit wil combineren. Deze houtskooltabletten, met zorg geproduceerd in Nederland, steek je eenvoudig aan met een aansteker – geen kolenbrander nodig. Binnen enkele seconden heb je een gloeiende kool die klaar is voor gebruik, perfect voor spontane shisha-sessies of voor het branden van bakhoor. Deze kolen zijn afkomstig uit Zuid Limburg, Nederland.",
+    "price": 2.99,
+    "stock": 55,
+    "image": "kolen1.png"
+  },
+  {
+    "id": 10,
+    "type": "Kolen",
+    "title": "Kolen (x20)",
+    "description": "0,5 KG. Onze quick-light waterpijp kolen zijn ideaal voor wie gemak en kwaliteit wil combineren. Deze houtskooltabletten, met zorg geproduceerd in Nederland, steek je eenvoudig aan met een aansteker – geen kolenbrander nodig. Binnen enkele seconden heb je een gloeiende kool die klaar is voor gebruik, perfect voor spontane shisha-sessies of voor het branden van bakhoor. Deze kolen zijn afkomstig uit Zuid Limburg, Nederland.",
+    "price": 4.99,
+    "stock": 39,
+    "image": "kolen2.png"
+  },
+  {
+    "id": 11,
+    "type": "Kolen",
+    "title": "Kolen (x50)",
+    "description": "1 KG. Onze quick-light waterpijp kolen zijn ideaal voor wie gemak en kwaliteit wil combineren. Deze houtskooltabletten, met zorg geproduceerd in Nederland, steek je eenvoudig aan met een aansteker – geen kolenbrander nodig. Binnen enkele seconden heb je een gloeiende kool die klaar is voor gebruik, perfect voor spontane shisha-sessies of voor het branden van bakhoor. Deze kolen zijn afkomstig uit Zuid Limburg, Nederland.",
+    "price": 10.99,
+    "stock": 10,
+    "image": "kolen3.png"
+  },
+  {
+    "id": 12,
+    "type": "Kolen",
+    "title": "Kolen (x100)",
+    "description": "2 KG. Onze quick-light waterpijp kolen zijn ideaal voor wie gemak en kwaliteit wil combineren. Deze houtskooltabletten, met zorg geproduceerd in Nederland, steek je eenvoudig aan met een aansteker – geen kolenbrander nodig. Binnen enkele seconden heb je een gloeiende kool die klaar is voor gebruik, perfect voor spontane shisha-sessies of voor het branden van bakhoor. Deze kolen zijn afkomstig uit Zuid Limburg, Nederland.",
+    "price": 18.99,
+    "stock": 10,
+    "image": "kolen4.png"
+  }
+]
