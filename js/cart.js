@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         applyTheme(isDark);
     });
 
-    fetch('/data/products.json')
+    fetch('/M4BO/data/products.json')
         .then(res => res.json())
         .then(products => {
             const cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const cartItem = document.createElement('div');
                 cartItem.className = 'cart--item';
                 cartItem.innerHTML = `
-          <img src="img/${product.image}" alt="${product.title}" class="cart--item-image">
+          <img src="/M4BO/img/${product.image}" alt="${product.title}" class="cart--item-image">
           <div class="cart--item-info">
             <h3 class="cart--item-title">${product.title}</h3>
             <p class="cart--item-price">Prijs: €${product.price.toFixed(2)}</p>

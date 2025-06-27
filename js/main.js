@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tile.setAttribute('data-id', product.id);
     tile.innerHTML = `
       <div class="product--image">
-        <img src="img/${product.image}" alt="${product.title}">
+        <img src="/M4BO/img/${product.image}" alt="${product.title}">
       </div>
       <div class="product--info">
         <h3 class="product--title">${product.title}</h3>
@@ -120,7 +120,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function setupSearch() {
     if (!searchInput) return;
     searchInput.addEventListener('input', displayFilteredProducts);
-    searchInput.addEventListener('keydown', e => { if (e.key === "Enter") e.preventDefault(); searchInput.blur(); });
+    searchInput.addEventListener('keydown', e => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        searchInput.blur();
+      }
+    });
   }
 
   function setupPriceFilter() {
@@ -161,16 +166,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.getElementById('footerProductButton')?.addEventListener('click', () => {
-    const isHome = location.pathname === '/' || location.pathname.endsWith('index.html');
-    if (isHome) scrollToCatalog(); else window.location.href = '/index.html#scrollToCatalog';
+    const path = location.pathname;
+    const isHome = path.endsWith('/M4BO/') || path.endsWith('/M4BO/index.html');
+    if (isHome) scrollToCatalog();
+    else window.location.href = '/M4BO/index.html#scrollToCatalog';
   });
 
   document.getElementById('footerShoppingcartButton')?.addEventListener('click', () => {
-    if (!window.location.pathname.endsWith('winkelwagen.html')) window.location.href = '/winkelwagen.html';
+    if (!window.location.pathname.endsWith('/M4BO/winkelwagen.html')) {
+      window.location.href = '/M4BO/winkelwagen.html';
+    }
   });
 
   document.getElementById('footerHomeButton')?.addEventListener('click', () => {
-    if (!window.location.pathname.endsWith('index.html')) window.location.href = '/index.html';
+    const path = window.location.pathname;
+    const isHome = path.endsWith('/M4BO/') || path.endsWith('/M4BO/index.html');
+    if (!isHome) window.location.href = '/M4BO/index.html';
   });
 
   document.getElementById("sortToggle")?.addEventListener("click", () => {
@@ -184,14 +195,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (sortButton && localStorage.getItem("sortActive") === "true") sortButton.classList.add("active");
 
   document.getElementById('productButton')?.addEventListener('click', () => {
-    const isHome = location.pathname === '/' || location.pathname.endsWith('index.html');
-    if (isHome) scrollToCatalog(); else window.location.href = '/index.html#scrollToCatalog';
+    const isHome = location.pathname.endsWith('/M4BO/') || location.pathname.endsWith('/M4BO/index.html');
+    if (isHome) scrollToCatalog();
+    else window.location.href = '/M4BO/index.html#scrollToCatalog';
   });
 
   document.getElementById('shoppingCartButton')?.addEventListener('click', () => {
-    if (!window.location.pathname.endsWith('winkelwagen.html')) {
-      window.location.href = '/winkelwagen.html';
-    }
+    const isHome = location.pathname.endsWith('/M4BO/') || location.pathname.endsWith('/M4BO/winkelwagen.html');
+    if (isHome) return;
+    else window.location.href = '/M4BO/winkelwagen.html';
   });
 
   if (window.location.hash === '#scrollToCatalog') setTimeout(scrollToCatalog, 200);
@@ -210,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  fetch('data/products.json')
+  fetch('/M4BO/data/products.json')
     .then(res => res.json())
     .then(data => {
       allProducts = data;

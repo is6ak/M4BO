@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggleBtn.textContent = isDark ? 'LIGHT' : 'DARK';
   }
 
-  fetch('/data/products.json')
+  fetch('/M4BO/data/products.json')
     .then(res => res.json())
     .then(products => {
       const product = products.find(p => p.id === productId);
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     container.innerHTML = `
       <div class="product--image-container">
         <div class="product--image-box">
-          <img src="/img/${product.image}" class="product--image-full" />
+          <img src="/M4BO/img/${product.image}" class="product--image-full" />
         </div>
       </div>
       <div class="product--info-detail">
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tile.className = 'product--tile';
       tile.innerHTML = `
         <div class="product--image">
-          <img src="/img/${p.image}" alt="${p.title}">
+          <img src="/M4BO/img/${p.image}" alt="${p.title}">
         </div>
         <div class="product--info">
           <h3 class="product--title">${p.title}</h3>
@@ -167,14 +167,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.getElementById('footerShoppingcartButton')?.addEventListener('click', () => {
-    if (!window.location.pathname.endsWith('winkelwagen.html')) {
-      window.location.href = '/winkelwagen.html';
+    if (!window.location.pathname.endsWith('/M4BO/winkelwagen.html')) {
+      window.location.href = '/M4BO/winkelwagen.html';
     }
   });
 
-  document.getElementById('shoppingCartButton')?.addEventListener('click', () => {
-    if (!window.location.pathname.endsWith('winkelwagen.html')) {
-      window.location.href = '/winkelwagen.html';
-    }
+  document.getElementById('footerHomeButton')?.addEventListener('click', () => {
+    const path = window.location.pathname;
+    const isHome = path.endsWith('/M4BO/') || path.endsWith('/M4BO/index.html');
+    if (!isHome) window.location.href = '/M4BO/index.html';
   });
 });
